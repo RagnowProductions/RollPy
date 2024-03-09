@@ -1,6 +1,6 @@
 uname = input("WHAT IS YOUR NAME, ADVENTURER?")
 questSelection = int(input("WHAT IS YOUR QUEST? (1 - TO FIND THE SECRETS, 2 - TO GET AS MUCH GOLD AS POSSIBLE, 3 - TO GET TROLLED MASSIVELY)"))
-irrelevant-inbox92687_26381.62292/1 = print("WHAT IS... wait i forgot")
+irrelevant-inbox92687_26381_62292_1 = print("WHAT IS... wait i forgot")
 print("Anyways, move along now, " + uname +". Dangers lead up ahead.")
 if questSelection == 1:
   print('You find a hidden walkway with a sign that says "BEWARE ' + uname + ', THE SECRETS ARE TOO SCARY"')
