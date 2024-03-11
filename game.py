@@ -18,6 +18,29 @@ if questSelection == 1:
   print('You find a hidden walkway with a sign that says "BEWARE ' + uname + ', THE SECRETS ARE TOO SCARY"')
   wordWritten = input("What will you respond with on the sign? (this cannot be skipped its important to the LORE ¯\_(ツ)_/¯ )")
   print('You wrote "' + wordWritten + '" on the sign.')
+  whatdoyoudo = input("What will you do now? (1 - Go down the hallway, 2 - Wait by the sign)")
+  if whatdoyoudo == 1:
+    print("You travel down the hallway and come across two branches. One is further away from the other. You cannot see what's inside. The other is boarded up, but you hear the sound of wood being punched, and lasers.")
+    time.sleep(0.25)
+    whatdoyoudo = input("Where will you go? (1 - Investigate the boarded up room, 2 - Go down the hallway")
+    if whatdoyoudo == 1:
+      print("You attempt to break open the boarded room.")
+      print("Rolling for strength...")
+      time.sleep(3)
+      roll = rand.randint(1, 20)
+      opposingroll = rand.randint(1, 20)
+      print(roll + ".")
+      if roll > opposingroll:
+      print("You succesfully broke the wooden barrier and ran into the room.")
+      roll = rand.randint(1, 20)
+      if roll < 10:
+        print("The robots prepared for attack.")
+        losthp = rand.randint(1, 20)
+        hp = hp - (losthp * 2.5)
+        print("You lost " + losthp + ", which means you now have only " + hp + " left.")
+    elif roll <= opposingroll:
+      print("You failed at breaking the wooden barrier. (It's probably for the best.)")
+      time.sleep(1)
 elif questSelection == 2:
   print("You find piles of gold. Mountains of gold. But you can only carry 10 tons of gold at a time with the help of some friends. At the moment, you have no friends, so you can only carry 1/3 of that gold.")
   whatdoyoudo = input("What will you do? (1 - Wait in the gold room, 2 - Begin to steal gold, 3 - Follow the strange hallway leading to the room.)")
