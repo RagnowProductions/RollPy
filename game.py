@@ -31,8 +31,8 @@ if questSelection == 1:
       opposingroll = rand.randint(1, 20)
       print(roll + ".")
       if roll > opposingroll:
-      print("You succesfully broke the wooden barrier and ran into the room.")
-      roll = rand.randint(1, 20)
+        print("You succesfully broke the wooden barrier and ran into the room.")
+        roll = rand.randint(1, 20)
       if roll < 10:
         print("The robots prepared for attack.")
         losthp = rand.randint(1, 20)
