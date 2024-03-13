@@ -44,6 +44,22 @@ if questSelection == 1:
 elif questSelection == 2:
   print("You find piles of gold. Mountains of gold. But you can only carry 10 tons of gold at a time with the help of some friends. At the moment, you have no friends, so you can only carry 1/3 of that gold.")
   whatdoyoudo = input("What will you do? (1 - Wait in the gold room, 2 - Begin to steal gold, 3 - Follow the strange hallway leading to the room.)")
+  if whatdoyoudo == 1:
+    print("You wait...")
+    time.sleep(5)
+    print("...and wait...")
+    time.sleep(10)
+    print("...and wait some more...")
+    time.sleep(15)
+    print("You feel like there isn't a point in waiting anymore.")
+    roll = rand.randint(1, 20)
+    if roll => 7:
+      print("Suddenly, a clone of you ran in from the mysterious hallway.")
+      if roll => 14:
+        print("They are followed up by another person who looks identical to you.")
+    else:
+      print("You are all alone.")
+      print("Congrats, you played yourself.")
 elif questSelection == 3:
   print("You find yourself in a dark room with a small hallway boarded up. You feel a sense of impending doom. Suddenly, 3 AI robots, with pictures of a rickroll, a troll face, and a cat, fall from the ceiling chasing after you with deadly lasers.")
   whatdoyoudo = ("What will you do? (1 - Break the hallway barrier, 2 - Grab a mace from the corner (where did that come from?) and destroy the robots, 3 - Throw the robots against the wall and pin them down.)")
